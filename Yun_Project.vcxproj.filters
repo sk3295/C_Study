@@ -51,5 +51,8 @@
     <ClCompile Include="01_Array.c">
       <Filter>소스 파일\05_Array</Filter>
     </ClCompile>
+    <ClCompile Include="02_Array2D.c">
+      <Filter>소스 파일\05_Array</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
