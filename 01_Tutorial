@@ -1,0 +1,55 @@
+// Standard Input Output
+// > 표준 입출력
+#include <stdio.h>
+
+void main() {
+	// 코드는 위에서 아래로 실행된다.
+
+	// 변수의 생성
+	// > 자료형 + 이름;
+
+	// 캐릭터의 생명력입니다.
+	int		hp;
+	// 캐릭터의 마나입니다.
+	int		mp;
+	// 캐릭터의 이니셜입니다.
+	char	initial;
+
+	// 대입
+	// > 변수에 특정한 값을 저장하는 것
+	//   변수 = 값;
+
+	hp		= 100;
+	mp		= 30;
+
+	// 문자는 ' ' 안에 넣는다.
+	initial = 'V';
+
+	// %d
+	// > 이 칸에 숫자를 채운다.
+	// 한문장에도 여러개 사용가능, 순서대로 채운다.
+
+	// %c	[character]	: 문자
+	// %o	[Octo]		: 8진수
+	// %d	[Decimal]	: 10진수
+	// %x	[Hex]		: 16진수
+	// %f	[float]		: 실수 (소수점 있는 수)
+
+	// Escape Sequence
+	// > \n	[New Line]	: 줄바꿈
+	//	 \t [Tab]		: 탭
+	//	 \a [Allert]	: 경고음
+
+	// Alt를 누르며 화살표키를 누를시 커서에 있는 줄이 커서와 함께 이동한다.
+
+	printf("당신의 생명력을 입력해주세요 : ");
+	scanf_s("%d", &hp);
+
+	printf("[이니셜	: %c	]\n[체력	: %d	]\n[마나	: %d	]\n\n", initial, hp, mp);
+	printf("To Be or Not To Be That is Question\n");
+
+	              
+	
+
+
+}
