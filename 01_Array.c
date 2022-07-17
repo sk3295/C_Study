@@ -19,6 +19,10 @@ int main() {
 		a++;
 	}
 
+	for (int i = 0; i < 1000; i++) {
+		largeArray[i] = 'a' + (i % 26);
+	}
+
 	largeArray[999] = 0;
 
 	printf(gameName);
