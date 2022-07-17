@@ -9,9 +9,23 @@ int main() {
 
 	// 같은 자료형을 일렬로 쭉 이어둔 것을 배열이라고 한다.
 	// [a][a][a][a][b][b][b][b][c][c][c][c]
+	//  0           4           8
+	//     1	       5           9
+	//        2           6           10
+	//           3           7           11
 	
-	for (int i = 0; i < 12; i++) {
-		printf("[%.2d]", class[0][i]);
+	// 안쪽 배열 크기의 의미는 몇칸 이동하면 다음 배열인지를 의미한다.
+
+	printf("2차원 배열 \"class\"의 크기 : %d\n", sizeof(class));
+	printf("2차원 배열 \"class[0]\"의 크기 : %d\n\n", sizeof(class[0]));
+							
+	//					전체 배열길이	자료형(배열)의 크기
+	for (int j = 0; j < sizeof(class) / sizeof(grade[j]); j++) {
+		//					현재 줄의 길이	   내부 자료형
+		for (int i = 0; i < sizeof(class[j]) / sizeof(int); i++) {
+			printf("[%.2d]", class[j][i]);
+		}
+		printf("\n");
 	}
 
 	// 이중 For 문
