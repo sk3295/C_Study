@@ -44,11 +44,13 @@ int main() {
 	char bingo[3][3] =
 	{
 		{0, 1, 1},
-		{0, 1, 0},
+		{1, 1, 1},
 		{1, 1, 1}
 	};
 	
 	int count = 0;
+	int countA = 0;
+	int countB = 0;
 
 	for (int i = 0; i < 3; i++) {
 		int j = 0;
@@ -64,7 +66,22 @@ int main() {
 		}
 	}
 
-	printf("°¡·ÎÁÙ ºù°íÀÇ °¹¼ö´Â : %d", count);
+	for (int i = 0; i < 3; i++) {
+		for (int j = 0; j < 3; j++) {
+			if (bingo[i][j] == 1) {
+				countA++;
+			}
+		}
+		if (countA == 3) {
+			countB++;
+			countA = 0;
+		}
+		else
+			countA = 0;
+	}
+
+	printf("°¡·ÎÁÙ ºù°íÀÇ °¹¼ö´Â : %d\n", count);
+	printf("°¡·ÎÁÙ ºù°íÀÇ °¹¼ö´Â : %d", countB);
 
 	// ÀÌÁß For ¹®
 	/*
