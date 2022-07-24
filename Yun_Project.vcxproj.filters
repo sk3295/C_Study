@@ -28,6 +28,9 @@
     <Filter Include="소스 파일\05_Array">
       <UniqueIdentifier>{59c88ff9-3a32-4397-9fc2-c177b221fca7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\06_Function">
+      <UniqueIdentifier>{7f68033d-5976-4510-8732-75b727f3d357}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="01_Tutorial">
@@ -53,6 +56,9 @@
     </ClCompile>
     <ClCompile Include="02_Array2D.c">
       <Filter>소스 파일\05_Array</Filter>
+    </ClCompile>
+    <ClCompile Include="01_Function.c">
+      <Filter>소스 파일\06_Function</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
