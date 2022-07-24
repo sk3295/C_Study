@@ -60,5 +60,8 @@
     <ClCompile Include="01_Function.c">
       <Filter>소스 파일\06_Function</Filter>
     </ClCompile>
+    <ClCompile Include="02_Custom.c">
+      <Filter>소스 파일\06_Function</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

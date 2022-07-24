@@ -57,7 +57,4 @@ int main() {
 	Next();
 	PrintStory("엔터도 마찬가지로", 10);
 	PrintStory("직접 치지 않아도 괜찮습니다.", 10);
-
-
-
 }
