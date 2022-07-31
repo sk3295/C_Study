@@ -31,6 +31,9 @@
     <Filter Include="소스 파일\06_Function">
       <UniqueIdentifier>{7f68033d-5976-4510-8732-75b727f3d357}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\07_Header">
+      <UniqueIdentifier>{0bace465-23f9-4500-bb73-e4104b410631}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="01_Tutorial">
@@ -63,5 +66,13 @@
     <ClCompile Include="02_Custom.c">
       <Filter>소스 파일\06_Function</Filter>
     </ClCompile>
+    <ClCompile Include="01_Header.c">
+      <Filter>소스 파일\07_Header</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TestHeader.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
