@@ -24,6 +24,11 @@ void printCharacter(struct Character target) {
 	printf("경험치			: %.02f\n", target.exp);
 }
 
+void takeDamage(struct Character target, int damage) {
+	target.hp -= damage;
+	printCharacter(target); // 함수의 매개변수를 전달하는 것
+}
+
 int main() {
 	int myHp,	 myMp,	  myLv,	   myExp;
 	int slimeHp, slimeMp, slimeLv, sliemExp;
@@ -42,5 +47,7 @@ int main() {
 	printf("플레이어의 경험치	: %.02f\n\n", player.exp);
 
 	struct Character monster = CharacterConstructor(30, 10, 1);
+
+	takeDamage(monster, 20);
 	printCharacter(monster);
 }
